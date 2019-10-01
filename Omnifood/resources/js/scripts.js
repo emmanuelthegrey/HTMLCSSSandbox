@@ -57,4 +57,41 @@ $('a[href*="#"]')
   }
 });
 
+$('.js--wp-1').waypoint(function(d){
+	$('.js--wp-1').addClass('animated fadeIn');
+}, {
+	offset: '50%'
+});
+
+$('.js--wp-2').waypoint(function(d){
+	$('.js--wp-2').addClass('animated fadeInUp');
+}, {
+	offset: '50%'
+});
+
+$('.js--wp-3').waypoint(function(d){
+	$('.js--wp-3').addClass('animated fadeIn');
+}, {
+	offset: '50%'
+});
+
+$('.js--wp-4').waypoint(function(d){
+	$('.js--wp-4').addClass('animated pulse');
+}, {
+	offset: '50%'
+});
+
+$('.js--nav-icon').click(function(){
+	let nav = $('.js--main-nav');
+	let icon = $('.js--nav-icon ion-icon');
+
+	nav.slideToggle(200);
+
+	if(icon.attr('name') === 'menu'){
+		icon.attr('name', 'close');
+	}else{
+		icon.attr('name', 'menu');
+	}
+});
+
 });

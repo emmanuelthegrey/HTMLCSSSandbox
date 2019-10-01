@@ -176,10 +176,7 @@ header {
 	float: left;
 	margin: 5px 0;
 }
-.sticky .logo{display: none;}
-.sticky .logo-black{
-	display: block;
-}
+
 
 .main-nav {
     float: right;
@@ -210,6 +207,19 @@ header {
 
 }
 
+/* Mobile nav */
+.mobile-nav-icon{
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.ion-menu{
+	font-size: 200%;
+	color: #fff;
+}
+
 /* Sticky */
 
 .sticky{
@@ -224,6 +234,11 @@ header {
 
 .sticky .main-nav {
     margin-top: 18px;
+}
+
+.sticky .logo{display: none;}
+.sticky .logo-black{
+	display: block;
 }
 
 .sticky li a:link,
@@ -553,4 +568,24 @@ footer li a:hover{
 .social-links li a:link,
 .social-links li a:visited{
     font-size: 180%;
+}
+
+/* Animations */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3{
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+}
+.js--wp-4{
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated{
+	opacity: 1;
 }
